@@ -1,0 +1,40 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "capitainewp/scdcontent",
+	"version": "0.1.0",
+	"title": "Deuxième encart image / texte",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Premier encart image / texte",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+	  "content": {
+		"type": "string",
+		"source": "html",
+		"selector": ".content"
+	  },
+	  "pictureID": {
+		"type": "number",
+		"default": null
+	  },
+	  "pictureURL": {
+		"type": "string",
+		"source": "attribute",
+		"attribute": "src",
+		"selector": "img"
+	  },
+	  "pictureAlt": {
+		"type": "string",
+		"source": "attribute",
+		"attribute": "alt",
+		"selector": "img"
+	  }
+	},
+	"textdomain": "capitainewp-gut-bases",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

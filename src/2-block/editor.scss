@@ -1,0 +1,21 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-capitainewp-gut-bases {
+	border: 1px dotted #f00;
+}
+
+.containerBlock1{
+	position: relative;
+  .blockImageBlock1{
+	width: 100%;
+  }
+  .blockTexteBlock1{
+	position: absolute;
+	inset: 0;
+	height: fit-content;
+  }
+}

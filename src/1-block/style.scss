@@ -1,0 +1,39 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-capitainewp-firstcontent {
+	max-width: unset !important;
+	position: relative;
+
+	&::after {
+		content: '';
+		position: absolute;
+		inset: 0;
+		background-color: rgba(0, 0, 0, 0.5);
+		z-index: 1;
+	}
+	
+	p.wp-block-capitainewp-firstcontent {
+		width: 100%;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	p.content {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: clamp(14px, 5vw, 36px);
+		color: #fff;
+		font-weight: 800;
+		z-index: 10;
+		margin: 0;
+	}
+}

@@ -1,0 +1,28 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-capitainewp-scdcontent {
+	max-width: unset !important;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+
+	p.wp-block-capitainewp-scdcontent {
+		flex: calc(50% - 10px);
+		min-width: 350px;
+		max-width: 100%;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	p.content {
+		flex: calc(50% - 10px);
+	}
+}
